@@ -5,34 +5,58 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  // background: url("assets/mountains.jpeg");
+  background: url("./assets/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg"); 
+
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 header {
   width: 100vw;
   height: 100px;
   background-color: white;
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   .logo_box {
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXtnU_YzLe2Rt27pKETm0JuBVxzJx3_eveEw&usqp=CAU");
-    height: 80px;
-    border: 1px dotted gray;
-    width: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-image: url("https://tsflights-images.firebaseapp.com/TsFlightsHorizLogo.jpg");
+      // background-image: url("assets/TsFlightsHorizLogo.jpg");
+
+      height: 80px;
+      width: 250px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: center;
+      margin: 10px 20px;
+      align-self: flex-start;
+      @media screen and (max-width: 497px) {
+          width: 200px;
+          margin-left: 4px;
+          margin-top: 7px;
+      }
   }
+
   .link_box {
-    margin: 10px;
-    height: 80px;
-    width: auto;
-    align-self:flex-end;
-    border: 1px gray dotted;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
+      height: 80px;
+      margin: 18px 10px;
+      align-self: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      button {
+          border-radius: 9px;
+          width: 100px;
+          height: 30px;
+          background-color: #415D65;
+          color: white;
+          text-align: center;
+          @media screen and (max-width: 480px) {
+              width: 60px;
+              margin-right: 5px;
+            }
+      }
   }
 }
